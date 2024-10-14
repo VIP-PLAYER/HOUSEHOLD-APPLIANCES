@@ -1,0 +1,66 @@
+.product__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    background-color: var(--sectionBack);
+    width: 350px;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 40px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.image {
+    width: 100%;
+    height: 60%;
+    display: grid;
+    place-items: center;
+}
+
+.image img {
+    width: 240px;
+}
+
+.namePrice {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.namePrice h3 {
+    font-size: 2em;
+    text-transform: capitalize;
+    color: var(--textColor);
+}
+
+.namePrice span {
+    font-size: 1.5em;
+    color: var(--starColor);
+}
+
+.product p {
+    font-size: 18px;
+    line-height: 25px;
+    text-wrap: wrap;
+}
+
+.stars svg {
+    font-size: 1.3em;
+    color: var(--starColor);
+}
+
+.buy {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--textColor);
+}
